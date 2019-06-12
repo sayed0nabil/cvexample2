@@ -1,0 +1,302 @@
+/*Start Main Rules*/
+*{
+    box-sizing: border-box;
+}
+.main-color{
+    color: #02CAD4;
+}
+.main-bg{
+    background: #02CAD4;
+}
+.upper{
+    text-transform: uppercase;
+}
+body > section{
+    padding: 65px 0 30px ;
+}
+body > section > h2:first-of-type{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    
+}
+/*End Main Rules*/
+/*Start Navbar*/
+nav .nav-item .nav-link{
+    font-size: 20px;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+nav .nav-item .nav-link:hover{
+    color: #03a9b1;
+}
+nav .active{
+    color: #02CAD4;
+}
+/*End Navbar*/
+/*Start Header*/
+header{
+    padding-top: 75px;
+}
+header .row div:nth-of-type(2){
+     padding: 200px 0 50px ;
+     vertical-align: bottom;
+}
+header .row div:nth-of-type(2) p:first-of-type{
+    font-size: 30px;
+}
+header .row div:nth-of-type(2) p:nth-of-type(2){
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 5px 5px silver;
+    color: white;
+}
+header .row div:nth-of-type(2) p:nth-of-type(3){
+    font-size: 30px;
+    color: #777;
+}
+header .row div:nth-of-type(2) p:nth-of-type(4){
+    color: white;
+}
+/*End Header*/
+/*Start About Section*/
+.about .row > div {
+    padding: 40px;
+    color: silver;
+    cursor: pointer;
+}
+.about .row svg{
+    font-size: 50px;
+}
+.about .row h3{
+    margin: 30px 0;
+}
+.about .row .fa-laptop ,
+.about .row .fa-mobile-alt , 
+.about .row .fa-user  ,
+.about .row .fa-bars , 
+.about .row .fa-file-alt , 
+.about .row h3{
+    transition: all .4s ease-in-out;
+}
+.about .row > div:hover h3{
+    color: black;
+}
+.about .row > div:hover .fa-laptop{
+    color: #F44336;
+}
+.about .row > div:hover .fa-mobile-alt{
+    color: #20B2AA;
+}
+.about .row > div:hover .fa-user{
+    color: #EC407A;
+}
+.about .row > div:hover .fa-bars{
+    color: aqua;
+}
+.about .row > div:hover .fa-file-alt{
+    color: limegreen;
+}
+.about button{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+}
+/*End About Section*/
+/*Start Services Section*/
+.services{
+    background: #1E2938;
+}
+.services > h2{
+    color: white;
+}
+.services h6{
+    text-transform: uppercase;
+    color: #02CAD4;
+}
+.services .row svg{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+    color: #02CAD4;
+    transition: all .4s ease-in-out;
+}
+.services .row p{
+    color: #BBB;
+}
+.services .row > div{
+    margin: 30px 0;
+    cursor: pointer;
+}
+.services .row > div:hover svg{
+    background: #02CAD4;
+    color: white;
+}
+/*End Services Section*/
+/*Start Portfolio Section*/
+.titles{
+    color: silver;
+    padding-top: 20px;
+}
+.titles span{
+    cursor: pointer;
+    padding: 0 20px;
+    transition: all .4s ease-in-out;
+}
+.titles span:hover , .titles .active{
+    color: #02CAD4;
+}
+.images .row > div{
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    margin: 40px 0 0;
+}
+.images .row > div .cover{
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0;
+    transition: all .4s ease-in-out;
+}
+.images .row > div:hover .cover{
+    width: 100%;
+    height: 100%;
+}
+.images .row > div svg{
+    position: absolute;
+    top: -40px;
+    left: 40%;
+    font-size: 40px;
+    color: #02CAD4;
+    transition: all .4s ease-in-out;
+    
+}
+.images .row > div:hover svg{
+    top: 40%;
+    left: 40%;
+}
+.add .custom {
+    background: url("../images/banner5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+.add .cover{
+    background: rgba(0,0,0,.7);
+    height: 100%;
+}
+.add .custom .row > div{
+    color: white;
+    font-size: 50px;
+}
+.add .custom .row p{
+    color: aqua;
+}
+.add .custom2{
+    background: url("../images/stats.jpg") center center no-repeat;
+    height: 300px;
+}
+/*End Portfolio Section*/
+/*Start Education Section*/
+.education .start ,
+.education #info1,
+.education #info2,
+.education #info3{
+    border: 1px solid #BBB;
+    border-collapse: collapse;
+    padding: 10px;
+}
+.education .start{
+    cursor: pointer;
+    position: relative;
+}
+.education .fa-sort-down{
+    position: absolute;
+    right: 20px;
+}
+/*End Education Section*/
+/*Start Expeience Section*/
+.experience .row > div:first-of-type{
+    line-height: 2;
+    transition: all .4s ease-in-out;
+    height: 120px;
+}
+.experience .row:hover > div:first-of-type{
+    background: black;
+}
+.experience .row >div:nth-of-type(2){
+    border: 1px solid #02CAD4;
+    padding: 20px 40px;
+}
+.experience .row >div:nth-of-type(2) h3{
+    color: #02CAD4;
+}
+/*End Experience Section*/
+/*Start Contact Section*/
+.contact{
+    background: #232323;
+}
+.contact h2{
+    color: white;
+}
+.contact form{
+    padding: 40px 0 0;
+}
+.contact form textarea{
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+}
+/*End Contact Section*/
+/*Start Copyright Section*/
+.copyright{
+    height: 40px;
+    background: #02CAD4;
+    color: white;
+    line-height: 2.5;
+}
+
+/*End Copyright Section*/
+
+
+/* Start Loading */
+#content{
+    display: none;
+}
+#loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #EEE;
+}
+
+/* End Loading */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
